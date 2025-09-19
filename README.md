@@ -1,4 +1,4 @@
-# Planetary names
+# Planetary names 🌍💫
 
 Welcome to the **Planet Names** project — your go-to resource for a comprehensive and well-structured dataset of planetary names.
 
