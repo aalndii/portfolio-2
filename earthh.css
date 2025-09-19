@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+background-image: linear-gradient(rgb(5, 6, 44),  rgb(64, 29, 35));
+background-repeat: no-repeat;
+height: 100vh;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+ section{
+  background-image: url(IMG_9733.WEBP);
+  height: 100vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+
+ }
+ ul:hover li a{
+opacity: 0;
+ }
+ ul{
+  text-align: center;
+ }
+ ul li{
+  list-style: none;
+  margin: 15px 0;
+ }
+ ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  background-color: darkblue;
+  padding: 6px 15px ;
+  border-radius: 15px;
+  display: block;
+  width: 125px;
+     transition: 0.7s;
+     text-transform: uppercase;
+     position: relative;
+     z-index: 2;
+
+ }
+  ul li a:hover{
+    transform: scale(1.5);
+background-color: blueviolet;
+color: red;
+opacity: 1;
+  }
+  ul li::after{
+    content: attr(data-text);
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 85px;
+    font-weight:900 ;
+    text-transform: uppercase;
+    opacity: 0;
+    pointer-events:none ;
+    letter-spacing: 50px;
+    transition: 0.8s;
+  }
+  li:hover::after{
+opacity: 0.5;
+color:rgb(43, 226, 211);
+letter-spacing: 5px;
+  }
+  ul li::before{
+    content: '';
+    width:180px;
+    height: 80px;
+    background-color: white;
+    position: absolute;
+      left: 50%;
+    top: 50%;
+    transform: translate(-50% , 70%);
+    border-radius: 50%;
+    box-shadow: 0 0 90px rgb(255, 242, 0);
+    opacity: 0;
+    transition: 0.8s;
+  }
+ ul li:hover::before{
+  opacity: 0.5;
+  width: 80px;
+ }
